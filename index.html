@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شجين للسفريات والسياحة | shujeen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1E3A8A;
+            --primary-accent: #2563EB;
+            --gold: #D97706;
+            --gold-light: #F59E0B;
+            --bg-gradient: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%);
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            color: #F8FAFC;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .logo-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(217, 119, 6, 0.15);
+            border: 1px solid var(--gold);
+            color: #FBBF24;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #94A3B8;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        @media (min-width: 640px) {
+            .cta-group {
+                flex-direction: row;
+            }
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 300px;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+            color: #FFFFFF;
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px -5px rgba(37, 99, 235, 0.6);
+        }
+
+        .btn-secondary {
+            background: var(--card-bg);
+            color: #F8FAFC;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            text-align: right;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(217, 119, 6, 0.4);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .feature-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #F8FAFC;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-desc {
+            font-size: 0.9rem;
+            color: #94A3B8;
+            line-height: 1.5;
+        }
+
+        footer {
+            margin-top: 3rem;
+            color: #64748B;
+            font-size: 0.875rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+            width: 100%;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-badge">
+            <span>✈️</span>
+            <span>وكالة شجين للسفريات والسياحة</span>
+        </div>
+
+        <h1>تطبيق shujeen للخدمات السياحية والتأشيرات</h1>
+        <p class="subtitle">
+            منصتك المتكاملة لحجز الرحلات، متابعة طلبات التأشيرات، تنظيم رحلات العمرة، وإدارة كافة وثائق السفر بسهولة وأمان.
+        </p>
+
+        <div class="cta-group">
+            <a href="https://ais-pre-pl2ki324gnz4y5xwwhhedo-896078739319.europe-west2.run.app" target="_blank" class="btn btn-primary">
+                <span>📱</span>
+                <span>فتح التطبيق المباشر</span>
+            </a>
+            <a href="https://github.com/rqeebinstagram/shujeen/releases" target="_blank" class="btn btn-secondary">
+                <span>📥</span>
+                <span>تحميل ملف (APK)</span>
+            </a>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">🛂</span>
+                <div class="feature-title">حجز ومتابعة التأشيرات</div>
+                <div class="feature-desc">تقديم طلبات التأشيرة الإلكترونية ومتابعة حالتها خطوة بخطوة.</div>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">✈️</span>
+                <div class="feature-title">حجوزات الطيران والفنادق</div>
+                <div class="feature-desc">استعراض أحدث عروض السفر وحجز تذاكر الطيران والإقامة.</div>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">🕋</span>
+                <div class="feature-title">برامج العمرة والسياحة</div>
+                <div class="feature-desc">باقات سفر مميزة تتناسب مع كافة الاحتياجات العائلية والفردية.</div>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">📂</span>
+                <div class="feature-title">محفظة وثائق السفر</div>
+                <div class="feature-desc">حفظ وتأمين صور الجوازات والتأشيرات للوصول السريع إليها في أي وقت.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 - وكالة شجين للسفريات والسياحة (shujeen)</p>
+    </footer>
+</body>
+</html>
