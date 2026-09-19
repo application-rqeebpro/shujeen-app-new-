@@ -1,5 +1,5 @@
 {
-  "name": "وكالة شجين للسفريات والسياحة",
+  "name": "shujeen",
   "description": "تطبيق متكامل لحجز التأشيرات والرحلات السياحية وإدارة وثائق السفر والدفع الإلكتروني لوكالة شجين للسفريات والسياحة",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
